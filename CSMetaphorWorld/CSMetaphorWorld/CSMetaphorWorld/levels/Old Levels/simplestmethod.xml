@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="basic" description="simple variables">
+<availableMethodSignatures>
+ <string>simpleMethod()</string>
+</availableMethodSignatures>
+  <code>private void simpleMethod()
+{
+	Console.Write('=');
+}
+simpleMethod()
+Console.Write('D');
+</code>
+  <lineOrder>
+    <int>5</int> <!-- Name the function -->
+    <int>5</int> <!-- Call the function -->
+	
+    <int>3</int> <!-- New expression '=' -->
+	<int>3</int> <!-- Evaluate -->
+    <int>3</int> <!-- read to hand -->
+	<int>3</int> <!-- send to console -->
+	
+	<int>4</int> <!-- Reached the methods end, so return -->
+	
+	<int>6</int> <!-- New expression 'D' -->
+	<int>6</int> <!-- Evaluate -->
+    <int>6</int> <!-- read to hand -->
+	<int>6</int> <!-- send to console -->
+  </lineOrder>
+  <completeLevelInstructions>
+    <string>namemethod simpleMethod</string> <!-- 9 -->
+    <string>callfunction</string> <!-- 9 -->
+	
+    <string>calculatorexpression '='</string> <!-- 5 -->
+	<string>evaluatecalculator</string> <!-- 5 -->
+    <string>calculatortohand</string> <!-- 5 -->
+	<string>consolewrite</string> <!-- 5 -->
+	
+	<string>return</string> <!-- 4 -->
+	
+	<string>calculatorexpression 'D'</string> <!-- 6 -->
+	<string>evaluatecalculator</string> <!-- 6 -->
+    <string>calculatortohand</string> <!-- 6 -->
+	<string>consolewrite</string> <!-- 6 -->
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string>Name the function</string> <!-- Name the function -->
+    <string>Call the function</string> <!-- Call the function -->
+	
+    <string>New expression '='</string> <!-- New expression '=' -->
+	<string>Evaluate</string> <!-- Evaluate -->
+    <string>read to hand</string> <!-- read to hand -->
+	<string> send to console</string> <!-- send to console -->
+	
+	<string>Reached the methods end, so return </string> <!-- Reached the methods end, so return -->
+	
+	<string>New expression 'D'</string> <!-- New expression 'D' -->
+	<string>Evaluate</string> <!-- Evaluate -->
+    <string>read to hand</string> <!-- read to hand -->
+	<string> send to console</string> <!-- send to console -->
+  </hintForEachInstruction>
+    <consoleOutputs>
+    <string></string> <!-- Name the function -->
+    <string></string> <!-- Call the function -->
+	
+    <string></string> <!-- New expression '=' -->
+	<string></string> <!-- Evaluate -->
+    <string></string> <!-- read to hand -->
+	<string>=</string> <!-- send to console -->
+	
+	<string></string> <!-- Reached the methods end, so return -->
+	
+	<string></string> <!-- New expression 'D' -->
+	<string></string> <!-- Evaluate -->
+    <string></string> <!-- read to hand -->
+	<string>D</string> <!-- send to console -->
+  </consoleOutputs>
+  <operationsSoFar />
+</Level>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="noName" description="testDecription" componentEnabledMode="intbool">
+  <code>int counter = 1;
+while(counter &lt;= 6)
+{
+	counter = counter + 2;
+	
+	counter = counter + 3;
+}
+</code>
+  <isComplete>false</isComplete>
+  <lineOrder>
+    <int>1</int>
+    <int>1</int>
+    <int>1</int>
+    <int>2</int>
+    <int>2</int>
+    <int>4</int>
+    <int>4</int>
+    <int>6</int>
+    <int>6</int>
+    <int>2</int>
+    <int>2</int>
+    <int>4</int>
+    <int>4</int>
+    <int>6</int>
+    <int>6</int>
+    <int>2</int>
+    <int>2</int>
+  </lineOrder>
+  <completeLevelInstructions>
+    <string>declarevariable int counter</string>
+    <string>directhandwrite int 1</string>
+    <string>assignvalue counter</string>
+    <string>directhandwrite bool true</string>
+    <string>consumeBool</string>
+    <string>directhandwrite int 3</string>
+    <string>assignvalue counter</string>
+    <string>directhandwrite int 6</string>
+    <string>assignvalue counter</string>
+    <string>directhandwrite bool true</string>
+    <string>consumeBool</string>
+    <string>directhandwrite int 8</string>
+    <string>assignvalue counter</string>
+    <string>directhandwrite int 11</string>
+    <string>assignvalue counter</string>
+    <string>directhandwrite bool false</string>
+    <string>consumeBool</string>
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+  </hintForEachInstruction>
+  <consoleOutputs>
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+  </consoleOutputs>
+  <operationsSoFar />
+  <highlightStarts>
+    <int>0</int>
+    <int>14</int>
+    <int>4</int>
+    <int>6</int>
+    <int>0</int>
+    <int>11</int>
+    <int>1</int>
+    <int>11</int>
+    <int>1</int>
+    <int>6</int>
+    <int>0</int>
+    <int>11</int>
+    <int>1</int>
+    <int>11</int>
+    <int>1</int>
+    <int>6</int>
+    <int>0</int>
+  </highlightStarts>
+  <highlightLengths>
+    <int>11</int>
+    <int>1</int>
+    <int>10</int>
+    <int>12</int>
+    <int>19</int>
+    <int>11</int>
+    <int>10</int>
+    <int>11</int>
+    <int>10</int>
+    <int>12</int>
+    <int>19</int>
+    <int>11</int>
+    <int>10</int>
+    <int>11</int>
+    <int>10</int>
+    <int>12</int>
+    <int>19</int>
+  </highlightLengths>
+  <availableMethodSignatures />
+</Level>

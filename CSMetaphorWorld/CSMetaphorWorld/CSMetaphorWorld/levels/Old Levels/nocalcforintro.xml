@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Introduction to While Loops" description="While loops are the most fundamental of the iteration structures and should not be overlooked">
+<availableMethodSignatures>
+</availableMethodSignatures>
+  <code>int count = 0;
+//  for ( int i = 2; i &lt; 6; i+=2 )   //  &lt;--  this is a normal for loop declaration  
+for ( int i = 2; 
+       i &lt; 6;
+       i+=2 )    //&lt;--  this one has been spread out to show what happens when.
+	count += i;
+Console.WriteLine(count);
+</code>
+  <lineOrder>
+    <int>1</int> <!-- directhandwrite int 0 -->
+	<int>1</int> <!-- declare -->
+	
+	<int>3</int> <!-- directhandwrite int 2 -->
+	<int>3</int> <!-- declare i -->
+	
+	<!-- -->
+	
+	<int>4</int> <!-- directhandwrite bool true -->
+	
+	<int>6</int> <!-- directhandwrite int 2 -->
+	<int>6</int> <!-- assign to count-->
+	
+	<int>5</int> <!-- directhandwrite int 4 -->
+	<int>5</int> <!-- assign to i-->
+	
+	<!--  -->
+	
+	<int>4</int> <!-- directhandwrite bool true -->
+	
+	<int>6</int> <!-- directhandwrite int 6 -->
+	<int>6</int> <!-- assign to count-->
+	
+	<int>5</int> <!-- directhandwrite int 6 -->
+	<int>5</int> <!-- assign to i-->
+	
+	<!-- i is 6 by now -->
+	
+	<int>4</int> <!-- directhandwrite bool false -->
+	
+	<int>7</int> <!-- remove i from scope -->
+
+	<int>7</int> <!-- directhandwrite  int 6 -->
+	<int>7</int> <!-- write hand -->
+	
+  </lineOrder>
+  <completeLevelInstructions>
+	<string>directhandwrite int 0</string> 				<!-- 1 -->
+	<string>declarevariable int count</string> 			<!-- 1 -->
+	
+	<string>directhandwrite int 2</string> 				<!-- 3 -->
+	<string>declarevariable int i</string> 				<!-- 3 -->
+	
+	<!--  -->
+	
+	<string>directhandwrite bool true</string> 			<!-- 4 -->
+	
+	<string>directhandwrite int 2</string> 				<!-- 6 -->
+	<string>assignvalue count</string>					<!-- 6 -->
+	
+	<string>directhandwrite int 4</string> 				<!-- 5 -->
+	<string>assignvalue i</string>						<!-- 5 -->
+	
+	<!--  -->
+	
+	<string>directhandwrite bool true</string> 			<!-- 4 -->
+	
+	<string>directhandwrite int 6</string> 				<!-- 6 -->
+	<string>assignvalue count</string>					<!-- 6 -->
+	
+	<string>directhandwrite int 6</string> 				<!-- 5 -->
+	<string>assignvalue i</string>						<!-- 5 -->
+	
+	<!-- i is 6 by now -->
+	
+	<string>directhandwrite bool false</string> 		<!-- 4 -->
+	
+	<string>deletenewestvariable</string>  				<!-- 7 -->
+
+	<string>readvariable count</string>					<!-- 6 -->
+	<string>consolewrite</string> 						<!-- 6 -->
+  
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string></string> 			<!-- 1 -->
+	<string></string> 			<!-- 1 -->
+	
+	<string>Declare the loops inbuilt counter</string> 			<!-- 3 -->
+	<string>Declare the loops inbuilt counter</string> 			<!-- 3 -->
+
+	
+	<!--  -->
+
+	<string>Decide if the loop needs to continue</string>  		<!-- 4 -->
+	
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	
+	<string>Increment i</string> 		<!-- 5 -->
+	<string>Increment i</string> 		<!-- 5 -->
+
+	
+	<!-- -->
+	
+	<string>Decide if the loop needs to continue</string> 		<!-- 4 -->
+
+	
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	
+	<string>Increment i</string> 		<!-- 5 -->
+	<string>Increment i</string> 		<!-- 5 -->
+
+	
+	<!-- i is 6 by now -->
+	
+	<string>Decide if the loop needs to continue</string> 		<!-- 4 -->
+	
+	<string>We have gone out of the loops scope...i must be removed</string>  				<!-- 7 -->
+
+	<string>Read from count</string>				<!-- 6 -->
+	<string>Write it to the console (method call Console.Write())</string> <!-- 6 -->
+
+  </hintForEachInstruction>
+    <consoleOutputs>
+	<string></string> 			<!-- 1 -->
+	<string></string> 			<!-- 1 -->
+	
+	<string></string> 			<!-- 3 -->
+	<string></string> 			<!-- 3 -->
+
+	
+	<!--  -->
+
+	<string></string>  		<!-- 4 -->
+	
+	<string></string> 	<!-- 6 -->
+	<string></string> 	<!-- 6 -->
+	
+	<string></string> 		<!-- 5 -->
+	<string></string> 		<!-- 5 -->
+
+	
+	<!-- -->
+	
+	<string></string> 		<!-- 4 -->
+
+	
+	<string></string> 	<!-- 6 -->
+	<string></string> 	<!-- 6 -->
+	
+	<string></string> 		<!-- 5 -->
+	<string></string> 		<!-- 5 -->
+
+	
+	<!-- i is 6 by now -->
+	
+	<string></string> 		<!-- 4 -->
+	
+	<string></string>  				<!-- 7 -->
+
+	<string></string>				<!-- 6 -->
+	<string>6</string> <!-- 6 -->
+  </consoleOutputs>
+  <operationsSoFar />
+</Level>

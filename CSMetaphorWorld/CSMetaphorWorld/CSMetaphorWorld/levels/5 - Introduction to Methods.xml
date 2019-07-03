@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="noName" description="testDecription" componentEnabledMode="intmethods">
+  <code>private int someMethod()
+{
+	return 64;
+}
+
+private void anotherMethod(int x)
+{
+	x = x + 2;
+}
+
+private int argumentMethod(int x, int y)
+{
+	return x * y;
+}
+
+public void main()
+{
+	int x;
+	x = someMethod();
+	anotherMethod(x);
+	x = argumentMethod(3, 4);
+}
+</code>
+  <isComplete>false</isComplete>
+  <lineOrder>
+    <int>18</int>
+    <int>19</int>
+    <int>19</int>
+    <int>3</int>
+    <int>3</int>
+    <int>19</int>
+    <int>20</int>
+    <int>20</int>
+    <int>20</int>
+    <int>20</int>
+    <int>8</int>
+    <int>8</int>
+    <int>9</int>
+    <int>21</int>
+    <int>21</int>
+    <int>21</int>
+    <int>21</int>
+    <int>21</int>
+    <int>21</int>
+    <int>13</int>
+    <int>13</int>
+    <int>21</int>
+  </lineOrder>
+  <completeLevelInstructions>
+    <string>declarevariable int x</string>
+    <string>preparemethod someMethod()</string>
+    <string>callfunction</string>
+    <string>directhandwrite int 64</string>
+    <string>return</string>
+    <string>assignvalue x</string>
+    <string>preparemethod anotherMethod(int x)</string>
+    <string>readvariable x</string>
+    <string>assignparameter x</string>
+    <string>callfunction</string>
+    <string>directhandwrite int 66</string>
+    <string>assignvalue x</string>
+    <string>return</string>
+    <string>preparemethod argumentMethod(int x, int y)</string>
+    <string>directhandwrite int 3</string>
+    <string>assignparameter x</string>
+    <string>directhandwrite int 4</string>
+    <string>assignparameter y</string>
+    <string>callfunction</string>
+    <string>directhandwrite int 12</string>
+    <string>return</string>
+    <string>assignvalue x</string>
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string>Declare x</string>
+    <string>Prepare someMethod() for calling later</string>
+    <string>call the method</string>
+    <string>write int 64 on your hand</string>
+    <string>return</string>
+    <string>assign the returned value to x (your holding the returned value)</string>
+    <string>Prepare anotherMethod() for calling </string>
+    <string>Read the value of x from the stack frame</string>
+    <string>Assign the value in your hand to parameter x</string>
+    <string>Call the method</string>
+    <string>Evaluate what 64 + 2 is and write that on your hand</string>
+    <string>Assign the value in your hand to local variable x</string>
+    <string>return from the current method</string>
+    <string>Prepare argumentMethod for calling later</string>
+    <string>Write 3 on your hand</string>
+    <string>Assign the value in your hand to the first parameter</string>
+    <string>Write 4 on your hand</string>
+    <string>Assign your hands value as the to parameter y</string>
+    <string>Call the method</string>
+    <string>Write whatever 3 X 4 is on your hand</string>
+    <string>Return</string>
+    <string>assign the returned value to x (your holding the returned value) </string>
+  </hintForEachInstruction>
+  <consoleOutputs>
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+  </consoleOutputs>
+  <operationsSoFar />
+  <highlightStarts>
+    <int>1</int>
+    <int>5</int>
+    <int>5</int>
+    <int>8</int>
+    <int>1</int>
+    <int>1</int>
+    <int>1</int>
+    <int>15</int>
+    <int>14</int>
+    <int>1</int>
+    <int>5</int>
+    <int>1</int>
+    <int>0</int>
+    <int>5</int>
+    <int>20</int>
+    <int>20</int>
+    <int>23</int>
+    <int>21</int>
+    <int>5</int>
+    <int>8</int>
+    <int>1</int>
+    <int>1</int>
+  </highlightStarts>
+  <highlightLengths>
+    <int>5</int>
+    <int>10</int>
+    <int>12</int>
+    <int>2</int>
+    <int>6</int>
+    <int>4</int>
+    <int>13</int>
+    <int>1</int>
+    <int>3</int>
+    <int>16</int>
+    <int>5</int>
+    <int>4</int>
+    <int>1</int>
+    <int>14</int>
+    <int>1</int>
+    <int>2</int>
+    <int>1</int>
+    <int>3</int>
+    <int>20</int>
+    <int>5</int>
+    <int>6</int>
+    <int>4</int>
+  </highlightLengths>
+  <availableMethodSignatures>
+	<string>someMethod()</string>
+	<string>anotherMethod(int x)</string>
+	<string>argumentMethod(int x, int y)</string>
+</availableMethodSignatures>
+</Level>

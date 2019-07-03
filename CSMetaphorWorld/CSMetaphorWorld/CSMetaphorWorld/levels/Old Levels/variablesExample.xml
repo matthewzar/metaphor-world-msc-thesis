@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="basic" description="simple variables">
+<availableMethodSignatures>
+</availableMethodSignatures>
+  <code>int x;
+x = 1+1;
+int y = x + 1
+</code>
+  <lineOrder>
+    <int>1</int>
+    <int>2</int>
+    <int>2</int>
+	<int>2</int>
+    <int>2</int>
+	<int>3</int>
+	<int>3</int>
+	<int>3</int>
+	<int>3</int>
+	<int>3</int>
+	<int>3</int>
+  </lineOrder>
+  <completeLevelInstructions>
+    <string>declarevariable int x</string>
+    <string>calculatorexpression 1+1</string>
+    <string>evaluatecalculator</string>
+	<string>calculatortohand</string>
+    <string>assignvalue x</string>
+	<string>calculatorexpression x + 1</string>
+	<string>readvariable x</string>
+	<string>substituteexpression x</string>
+	<string>evaluatecalculator</string>
+	<string>calculatortohand</string>
+	<string>declarevariable int y</string>
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string>Make a new variable</string>
+    <string>Enter an expression into the calculator</string>
+    <string>Evaluate the calculators expression</string>
+	<string>Read the result of the evaluated expression to the hand</string>
+	<string>Save it to the relevant variable</string>
+    <string>Do the RHS first (expression to the calculator)</string>
+	<string>Read from the only missing variables value</string>
+    <string>Fill in the value you just read</string>
+    <string>CALCULATE!</string>
+	<string>Store result in hand</string>
+    <string>Declare what your going to store your held value in</string>
+  </hintForEachInstruction>
+    <consoleOutputs>
+    <string></string>
+    <string></string>
+	<string></string>
+    <string></string>
+    <string></string>
+	<string></string>
+    <string></string>
+    <string></string>
+    <string></string>
+	<string></string>
+	<string></string>
+  </consoleOutputs>
+  <operationsSoFar />
+</Level>

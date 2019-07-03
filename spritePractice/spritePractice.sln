@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spritePractice", "spritePractice\spritePractice\spritePractice.csproj", "{B890A5CE-B4DA-473A-A9D2-FA6827963F64}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "spritePracticeContent", "spritePractice\spritePracticeContent\spritePracticeContent.contentproj", "{8602928B-8DEF-4726-B196-2B714E682642}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B890A5CE-B4DA-473A-A9D2-FA6827963F64}.Debug|x86.ActiveCfg = Debug|x86
+		{B890A5CE-B4DA-473A-A9D2-FA6827963F64}.Debug|x86.Build.0 = Debug|x86
+		{B890A5CE-B4DA-473A-A9D2-FA6827963F64}.Release|x86.ActiveCfg = Release|x86
+		{B890A5CE-B4DA-473A-A9D2-FA6827963F64}.Release|x86.Build.0 = Release|x86
+		{8602928B-8DEF-4726-B196-2B714E682642}.Debug|x86.ActiveCfg = Debug|x86
+		{8602928B-8DEF-4726-B196-2B714E682642}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

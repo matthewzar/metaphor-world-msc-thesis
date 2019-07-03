@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Introduction to While Loops" description="While loops are the most fundamental of the iteration structures and should not be overlooked">
+<availableMethodSignatures>
+</availableMethodSignatures>
+  <code>int count = 0;
+//  for ( int i = 2; i &lt; 6; i+=2 )   //  &lt;--  this is a normal for loop declaration  
+for ( int i = 2; 
+       i &lt; 6;
+       i+=2 )    //&lt;--  this one has been spread out to show what happens when.
+	count += i;
+Console.WriteLine(count);
+</code>
+  <lineOrder>
+    <int>1</int> <!-- expresssion 0 -->
+	<int>1</int> <!-- eval -->
+	<int>1</int> <!-- read -->
+	<int>1</int> <!-- declare -->
+	
+	<int>3</int> <!-- expresssion 2 -->
+	<int>3</int> <!-- eval-->
+	<int>3</int> <!-- read -->
+	<int>3</int> <!-- declare i -->
+	
+	<!-- -->
+	
+	<int>4</int> <!-- expresssion i < 6 -->
+	<int>4</int> <!-- read i-->
+	<int>4</int> <!-- sub i -->
+	<int>4</int> <!-- eval -->
+	<int>4</int> <!-- read (for loop condition) -->
+	
+	<int>6</int> <!-- expresssion count + i -->
+	<int>6</int> <!-- read count-->
+	<int>6</int> <!-- sub count -->
+	<int>6</int> <!-- read i-->
+	<int>6</int> <!-- sub i -->
+	<int>6</int> <!-- eval -->
+	<int>6</int> <!-- read -->
+	<int>6</int> <!-- assign to count-->
+	
+	<int>5</int> <!-- expresssion i + 2 -->
+	<int>5</int> <!-- read i-->
+	<int>5</int> <!-- sub i -->
+	<int>5</int> <!-- eval -->
+	<int>5</int> <!-- read -->
+	<int>5</int> <!-- assign to i-->
+	
+	<!--  -->
+	
+	<int>4</int> <!-- expresssion i < 6 -->
+	<int>4</int> <!-- read i-->
+	<int>4</int> <!-- sub i -->
+	<int>4</int> <!-- eval -->
+	<int>4</int> <!-- read (for loop condition) -->
+	
+	<int>6</int> <!-- expresssion count + i -->
+	<int>6</int> <!-- read count-->
+	<int>6</int> <!-- sub count -->
+	<int>6</int> <!-- read i-->
+	<int>6</int> <!-- sub i -->
+	<int>6</int> <!-- eval -->
+	<int>6</int> <!-- read -->
+	<int>6</int> <!-- assign to count-->
+	
+	<int>5</int> <!-- expresssion i + 2 -->
+	<int>5</int> <!-- read i-->
+	<int>5</int> <!-- sub i -->
+	<int>5</int> <!-- eval -->
+	<int>5</int> <!-- read -->
+	<int>5</int> <!-- assign to i-->
+	
+	<!-- i is 6 by now -->
+	
+	<int>4</int> <!-- expresssion i < 6 -->
+	<int>4</int> <!-- read i-->
+	<int>4</int> <!-- sub i -->
+	<int>4</int> <!-- eval -->
+	<int>4</int> <!-- read (for loop condition) -->
+	
+	<int>7</int> <!-- remove i from scope -->
+
+	<int>7</int> <!-- expresssion i-->
+	<int>7</int> <!-- read i-->
+	<int>7</int> <!-- sub i -->
+	<int>7</int> <!-- eval -->
+	<int>7</int> <!-- read -->
+	<int>7</int> <!-- write hand -->
+	
+  </lineOrder>
+  <completeLevelInstructions>
+	<string>calculatorexpression 0</string> 			<!-- 1 -->
+	<string>evaluatecalculator</string> 				<!-- 1 -->
+	<string>calculatortohand</string> 					<!-- 1 -->
+	<string>declarevariable int count</string> 			<!-- 1 -->
+	
+	<string>calculatorexpression 2</string> 			<!-- 3 -->
+	<string>evaluatecalculator</string> 				<!-- 3 -->
+	<string>calculatortohand</string> 					<!-- 3 -->
+	<string>declarevariable int i</string> 				<!-- 3 -->
+	
+	<!--  -->
+	
+	<string>calculatorexpression i &lt; 6</string> 		<!-- 4 -->
+	<string>readvariable i</string>						<!-- 4 -->
+	<string>substituteexpression i</string>				<!-- 4 -->
+	<string>evaluatecalculator</string> 				<!-- 4 -->
+	<string>calculatortohand</string>  					<!-- 4 -->
+	
+	<string>calculatorexpression count + i</string> 	<!-- 6 -->
+	<string>readvariable count</string>					<!-- 6 -->
+	<string>substituteexpression count</string>			<!-- 6 -->
+	<string>readvariable i</string>						<!-- 6 -->
+	<string>substituteexpression i</string>				<!-- 6 -->
+	<string>evaluatecalculator</string> 				<!-- 6 -->
+	<string>calculatortohand</string>  					<!-- 6 -->
+	<string>assignvalue count</string>					<!-- 6 -->
+	
+	<string>calculatorexpression i + 2</string> 		<!-- 5 -->
+	<string>readvariable i</string>						<!-- 5 -->
+	<string>substituteexpression i</string>				<!-- 5 -->
+	<string>evaluatecalculator</string> 				<!-- 5 -->
+	<string>calculatortohand</string>  					<!-- 5 -->
+	<string>assignvalue i</string>						<!-- 5 -->
+	
+	<!--  -->
+	
+	<string>calculatorexpression i &lt; 6</string> 		<!-- 4 -->
+	<string>readvariable i</string>						<!-- 4 -->
+	<string>substituteexpression i</string>				<!-- 4 -->
+	<string>evaluatecalculator</string> 				<!-- 4 -->
+	<string>calculatortohand</string>  					<!-- 4 -->
+	
+	<string>calculatorexpression count + i</string> 	<!-- 6 -->
+	<string>readvariable count</string>					<!-- 6 -->
+	<string>substituteexpression count</string>			<!-- 6 -->
+	<string>readvariable i</string>						<!-- 6 -->
+	<string>substituteexpression i</string>				<!-- 6 -->
+	<string>evaluatecalculator</string> 				<!-- 6 -->
+	<string>calculatortohand</string>  					<!-- 6 -->
+	<string>assignvalue count</string>					<!-- 6 -->
+	
+	<string>calculatorexpression i + 2</string> 		<!-- 5 -->
+	<string>readvariable i</string>						<!-- 5 -->
+	<string>substituteexpression i</string>				<!-- 5 -->
+	<string>evaluatecalculator</string> 				<!-- 5 -->
+	<string>calculatortohand</string>  					<!-- 5 -->
+	<string>assignvalue i</string>						<!-- 5 -->
+	
+	<!-- i is 6 by now -->
+	
+	<string>calculatorexpression i &lt; 6</string> 		<!-- 4 -->
+	<string>readvariable i</string>						<!-- 4 -->
+	<string>substituteexpression i</string>				<!-- 4 -->
+	<string>evaluatecalculator</string> 				<!-- 4 -->
+	<string>calculatortohand</string>  					<!-- 4 -->
+	
+	<string>deletenewestvariable</string>  				<!-- 7 -->
+
+	<string>calculatorexpression count</string>				<!-- 6 -->
+	<string>readvariable count</string>						<!-- 6 -->
+	<string>substituteexpression count</string> 			<!-- 6 -->
+	<string>evaluatecalculator</string> 					<!-- 6 -->
+	<string>calculatortohand</string>  						<!-- 6 -->
+	<string>consolewrite</string> 							<!-- 6 -->
+  
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string></string> 			<!-- 1 -->
+	<string></string> 			<!-- 1 -->
+	<string></string> 			<!-- 1 -->
+	<string></string> 			<!-- 1 -->
+	
+	<string>Declare the loops inbuilt counter</string> 			<!-- 3 -->
+	<string>Declare the loops inbuilt counter</string> 			<!-- 3 -->
+	<string>Declare the loops inbuilt counter</string> 			<!-- 3 -->
+	<string>Declare the loops inbuilt counter</string> 			<!-- 3 -->
+	
+	<!--  -->
+	
+	<string>Decide if the loop needs to continue</string> 		<!-- 4 -->
+	<string>Decide if the loop needs to continue</string>		<!-- 4 -->
+	<string>Decide if the loop needs to continue</string>		<!-- 4 -->
+	<string>Decide if the loop needs to continue</string> 		<!-- 4 -->
+	<string>Decide if the loop needs to continue</string>  		<!-- 4 -->
+	
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	
+	<string>Increment i</string> 		<!-- 5 -->
+	<string>Increment i</string> 		<!-- 5 -->
+	<string>Increment i</string> 		<!-- 5 -->
+	<string>Increment i</string> 		<!-- 5 -->
+	<string>Increment i</string> 		<!-- 5 -->
+	<string>Increment i</string> 		<!-- 5 -->
+	
+	<!-- -->
+	
+	<string>Decide if the loop needs to continue</string> 		<!-- 4 -->
+	<string>Decide if the loop needs to continue</string>		<!-- 4 -->
+	<string>Decide if the loop needs to continue</string>		<!-- 4 -->
+	<string>Decide if the loop needs to continue</string> 		<!-- 4 -->
+	<string>Decide if the loop needs to continue</string>  		<!-- 4 -->
+	
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	<string>Add i to count</string> 	<!-- 6 -->
+	
+	<string>Increment i</string> 		<!-- 5 -->
+	<string>Increment i</string> 		<!-- 5 -->
+	<string>Increment i</string> 		<!-- 5 -->
+	<string>Increment i</string> 		<!-- 5 -->
+	<string>Increment i</string> 		<!-- 5 -->
+	<string>Increment i</string> 		<!-- 5 -->
+	
+	<!-- i is 6 by now -->
+	
+	<string>Decide if the loop needs to continue</string> 		<!-- 4 -->
+	<string>Decide if the loop needs to continue</string>		<!-- 4 -->
+	<string>Decide if the loop needs to continue</string>		<!-- 4 -->
+	<string>Decide if the loop needs to continue</string> 		<!-- 4 -->
+	<string>Decide if the loop needs to continue</string>  		<!-- 4 -->
+	
+	<string>We have gone out of the loops scope...i must be removed</string>  				<!-- 7 -->
+
+	<string>"count" is an expression</string>				<!-- 6 -->
+	<string>find a value</string>							<!-- 6 -->
+	<string>substitute it in</string> 						<!-- 6 -->
+	<string>Evaluate it</string> 							<!-- 6 -->
+	<string>Bring it to the hand</string>  					<!-- 6 -->
+	<string>Write it to the console (impossible right now)</string> <!-- 6 -->
+
+  </hintForEachInstruction>
+    <consoleOutputs>
+	<string></string> 			<!-- 1 -->
+	<string></string> 			<!-- 1 -->
+	<string></string> 			<!-- 1 -->
+	<string></string> 			<!-- 1 -->
+	
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	
+	<!-- -->
+	
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	
+	<!--  -->
+	
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	
+	<!-- i is 6 by now -->
+	
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	
+	<string></string>
+
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string>6</string> <!-- 6 -->
+  </consoleOutputs>
+  <operationsSoFar />
+</Level>

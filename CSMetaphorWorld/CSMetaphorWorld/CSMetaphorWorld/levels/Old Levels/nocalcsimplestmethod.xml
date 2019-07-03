@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="basic" description="simple variables">
+<availableMethodSignatures>
+	<string>simpleMethod()</string>
+	<string>Console.Write(char printIt)</string>
+</availableMethodSignatures>
+  <code>private void simpleMethod()
+{
+	Console.Write('=');
+}
+simpleMethod()
+Console.Write('D');
+</code>
+  <lineOrder>
+    <int>5</int> <!-- Name the function -->
+    <int>5</int> <!-- Call the function -->
+	
+    <int>3</int> <!-- directhandwrite char '=' -->
+	<int>3</int> <!-- send to console -->
+	
+	<int>4</int> <!-- Reached the methods end, so return -->
+	
+	<int>6</int> <!-- directhandwrite char 'D' -->
+	<int>6</int> <!-- send to console -->
+  </lineOrder>
+  <completeLevelInstructions>
+    <string>preparemethod simpleMethod()</string> <!-- 9 -->
+    <string>callfunction</string> <!-- 9 -->
+	
+    <string>directhandwrite char '='</string> <!-- 5 -->
+	<string>consolewrite</string> <!-- 5 -->
+	
+	<string>return</string> <!-- 4 -->
+	
+	<string>directhandwrite char 'D'</string> <!-- 6 -->
+	<string>consolewrite</string> <!-- 6 -->
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string>Name the function</string> <!-- Name the function -->
+    <string>Call the function</string> <!-- Call the function -->
+	
+    <string>Write the character '=' on your hand</string> 
+	<string>Send to console</string> <!-- send to console -->
+	
+	<string>Reached the methods end, so return </string> <!-- Reached the methods end, so return -->
+	
+	<string>Write the character 'D' on your hand</string> 
+	<string>Send to console</string> <!-- send to console -->
+  </hintForEachInstruction>
+    <consoleOutputs>
+    <string></string> <!-- Name the function -->
+    <string></string> <!-- Call the function -->
+	
+    <string></string> 
+	<string>=</string> <!-- send to console -->
+	
+	<string></string> <!-- Reached the methods end, so return -->
+	
+	<string></string>
+	<string>D</string> <!-- send to console -->
+  </consoleOutputs>
+  <operationsSoFar />
+</Level>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Variable operations" description="simple variables">
+<availableMethodSignatures>
+	<string>function1(int x)</string>
+    <string>nthTriangle(int n)</string>
+    <string>multiply(double n1, double n2)</string>
+    <string>Console.WriteLine(string x)</string>
+</availableMethodSignatures>
+  <code>int x;
+int y;
+int z;
+x = 23;
+z = x + 4
+y = x * 2;
+y += 4
+z = x % 4;
+z = z + x - y;
+z++;
+</code>
+  <lineOrder>
+    <int>1</int>
+    <int>2</int>
+    <int>3</int>
+    <int>4</int>
+	<int>4</int>
+	<int>4</int>
+	<int>4</int>
+	<int>5</int>
+	<int>5</int>
+	<int>5</int>
+	<int>5</int>
+	<int>5</int>
+	<int>5</int>
+	
+	<int>6</int>
+	<int>6</int>
+	<int>6</int>
+	<int>6</int>
+	<int>6</int>
+	<int>6</int>
+	
+	<int>7</int>
+	<int>7</int>
+	<int>7</int>
+	<int>7</int>
+	<int>7</int>
+	<int>7</int>
+	
+	<int>8</int>
+	<int>8</int>
+	<int>8</int>
+	<int>8</int>
+	<int>8</int>
+	<int>8</int>
+	
+	<int>9</int>
+	<int>9</int>
+	<int>9</int>
+	<int>9</int>
+	<int>9</int>
+	<int>9</int>
+	<int>9</int>
+	<int>9</int>
+	<int>9</int>
+	<int>9</int>
+	
+	<int>10</int>
+	<int>10</int>
+	<int>10</int>
+	<int>10</int>
+	<int>10</int>
+	<int>10</int>
+  </lineOrder>
+  <completeLevelInstructions>
+    <string>declarevariable int x</string>
+    <string>declarevariable int y</string>
+    <string>declarevariable int z</string>
+    <string>calculatorexpression 23</string>
+	<string>evaluatecalculator</string>
+	<string>calculatortohand</string>
+	<string>assignvalue x</string>
+	
+	<string>calculatorexpression x + 4</string>
+	<string>readvariable x</string>
+	<string>substituteexpression x</string>
+	<string>evaluatecalculator</string>
+	<string>calculatortohand</string>
+	<string>assignvalue z</string>
+	
+	<string>calculatorexpression x * 2</string>
+	<string>readvariable x</string>
+	<string>substituteexpression x</string>
+	<string>evaluatecalculator</string>
+	<string>calculatortohand</string>
+	<string>assignvalue y</string>
+	<string>calculatorexpression y + 4</string>
+	<string>readvariable y</string>
+	<string>substituteexpression y</string>
+	<string>evaluatecalculator</string>
+	<string>calculatortohand</string>
+	<string>assignvalue y</string>
+	<string>calculatorexpression x % 4</string>
+	<string>readvariable x</string>
+	<string>substituteexpression x</string>
+	<string>evaluatecalculator</string>
+	<string>calculatortohand</string>
+	<string>assignvalue z</string>
+	<string>calculatorexpression z + x - y</string>
+	<string>readvariable z</string>
+	<string>substituteexpression z</string>
+	<string>readvariable x</string>
+	<string>substituteexpression x</string>
+	<string>readvariable y</string>
+	<string>substituteexpression y</string>
+	<string>evaluatecalculator</string>
+	<string>calculatortohand</string>
+	<string>assignvalue z</string>
+	<string>calculatorexpression z + 1</string>
+	<string>readvariable z</string>
+	<string>substituteexpression z</string>
+	<string>evaluatecalculator</string>
+	<string>calculatortohand</string>
+	<string>assignvalue z</string>
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string>Declare x</string>
+    <string>Declare y</string>
+    <string>Declare z</string>
+    <string>23 looks simple...but it's still an expression.</string>
+	<string>Evaluation won't simplify things...but, again, it has to be done.</string>
+	<string>We can't write straight to the variable, so read the content of the calculator</string>
+	<string>Store what you got in the relevant variable</string>
+	<string>Write to the calculator</string>
+	<string>We're missing a value for x in the current expression...</string>
+	<string>So you have the right value, but where do you store it?</string>
+	<string>Now that there are no unknowns in the expression we can evaluate it.</string>
+	<string>Read to the hand</string>
+	<string>Assignment time</string>
+	
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	
+	<string>This is no different to steps involved in "y = x + 2". This is just a shorthand.</string>
+	<string>This is no different to steps involved in "y = x + 2". This is just a shorthand.</string>
+	<string>This is no different to steps involved in "y = x + 2". This is just a shorthand.</string>
+	<string>This is no different to steps involved in "y = x + 2". This is just a shorthand.</string>
+	<string>This is no different to steps involved in "y = x + 2". This is just a shorthand.</string>
+	<string>This is no different to steps involved in "y = x + 2". This is just a shorthand.</string>
+	
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	
+	<string>This is no different to steps involved in "x = x + 4", you just have more than one variable to fetch a value for.</string>
+	<string>This is no different to steps involved in "x = x + 4", you just have more than one variable to fetch a value for.</string>
+	<string>This is no different to steps involved in "x = x + 4", you just have more than one variable to fetch a value for.</string>
+	<string>This is no different to steps involved in "x = x + 4", you just have more than one variable to fetch a value for.</string>
+	<string>This is no different to steps involved in "x = x + 4", you just have more than one variable to fetch a value for.</string>
+	<string>This is no different to steps involved in "x = x + 4", you just have more than one variable to fetch a value for.</string>
+	<string>This is no different to steps involved in "x = x + 4", you just have more than one variable to fetch a value for.</string>
+	<string>This is no different to steps involved in "x = x + 4", you just have more than one variable to fetch a value for.</string>
+	<string>This is no different to steps involved in "x = x + 4", you just have more than one variable to fetch a value for.</string>
+	<string>This is no different to steps involved in "x = x + 4", you just have more than one variable to fetch a value for.</string>
+	
+	<string>"x++" is shorthand for saying "x = x + 1"</string>
+	<string>"x++" is shorthand for saying "x = x + 1"</string>
+	<string>"x++" is shorthand for saying "x = x + 1"</string>
+	<string>"x++" is shorthand for saying "x = x + 1"</string>
+	<string>"x++" is shorthand for saying "x = x + 1"</string>
+	<string>"x++" is shorthand for saying "x = x + 1"</string>
+  </hintForEachInstruction>
+    <consoleOutputs>
+    <string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+    <string></string>
+    <string></string>
+    <string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+  </consoleOutputs>
+  <operationsSoFar />
+</Level>

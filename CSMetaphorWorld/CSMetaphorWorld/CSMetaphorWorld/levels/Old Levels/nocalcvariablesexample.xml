@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="basic" description="simple variables">
+<availableMethodSignatures>
+</availableMethodSignatures>
+  <code>int x;
+x = 1+1;
+int y = x + 1
+</code>
+  <lineOrder>
+    <int>1</int> <!-- declare x -->
+	
+    <int>2</int> <!-- directhandwrite int 2 -->
+    <int>2</int> <!-- assign x -->
+	
+	<int>3</int> <!-- directhandwrite int 3 -->
+	<int>3</int> <!-- declarevariable int y -->
+  </lineOrder>
+  <completeLevelInstructions>
+    <string>declarevariable int x</string>
+	
+    <string>directhandwrite int 2</string>
+    <string>assignvalue x</string>
+	
+	<string>directhandwrite int 3</string>
+	<string>declarevariable int y</string>
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string>Make a new variable</string>
+	
+    <string>Write the value you want to assign on your hand</string>
+    <string>Save it to the relevant variable</string>
+	
+    <string>Write the result of the RHS on your hand</string>
+    <string>Declare what your going to store your held value in</string>
+  </hintForEachInstruction>
+    <consoleOutputs>
+    <string></string>
+	
+    <string></string>
+    <string></string>
+	
+    <string></string>
+    <string></string>
+  </consoleOutputs>
+  <operationsSoFar />
+</Level>

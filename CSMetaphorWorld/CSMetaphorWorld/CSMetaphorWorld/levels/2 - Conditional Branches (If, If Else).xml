@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="noName" description="testDecription" componentEnabledMode="intbool">
+  <code>int x = 1;
+if(3 &gt; 2)
+	x = 5;
+
+if(x == 1)
+	x = x + 2;
+	
+if(x &lt; 5)
+	x = 6;
+else
+	x = 10;
+	
+int y = x - 2;
+if(x == y || x &lt; 6)
+{
+	y = -10;
+	x = 10;
+}
+
+if(true &amp;&amp; false || true) 
+	x = x + y;</code>
+  <isComplete>false</isComplete>
+  <lineOrder>
+    <int>1</int>
+    <int>1</int>
+    <int>1</int>
+    <int>2</int>
+    <int>2</int>
+    <int>3</int>
+    <int>3</int>
+    <int>5</int>
+    <int>5</int>
+    <int>8</int>
+    <int>8</int>
+    <int>11</int>
+    <int>11</int>
+    <int>13</int>
+    <int>13</int>
+    <int>13</int>
+    <int>14</int>
+    <int>14</int>
+    <int>20</int>
+    <int>20</int>
+    <int>21</int>
+    <int>21</int>
+  </lineOrder>
+  <completeLevelInstructions>
+    <string>declarevariable int x</string>
+    <string>directhandwrite int 1</string>
+    <string>assignvalue x</string>
+    <string>directhandwrite bool true</string>
+    <string>consumeBool</string>
+    <string>directhandwrite int 5</string>
+    <string>assignvalue x</string>
+    <string>directhandwrite bool false</string>
+    <string>consumeBool</string>
+    <string>directhandwrite bool false</string>
+    <string>consumebool</string>
+    <string>directhandwrite int 10</string>
+    <string>assignvalue x</string>
+    <string>declarevariable int y</string>
+    <string>directhandwrite int 8</string>
+    <string>assignvalue y</string>
+    <string>directhandwrite bool false</string>
+    <string>consumeBool</string>
+    <string>directhandwrite bool true</string>
+    <string>consumeBool</string>
+    <string>directhandwrite int 18</string>
+    <string>assignvalue x</string>
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string>declare x</string>
+    <string>write 1 onto the hand</string>
+    <string>Place the hand value in the variable</string>
+    <string>Write on the hand if 3 is greater than 2</string>
+    <string>Let the bool eater take the result</string>
+    <string>write 5 to the hand</string>
+    <string>assign the value to x</string>
+    <string>decide if x is equal to 1 and write the result on the hand</string>
+    <string>Feed the boolean value to the Bool Eater</string>
+    <string>decide if x is less than 5 and write the result on the hand</string>
+    <string>Get rid of the bool you just worked out by feeding it the bool Eater</string>
+    <string>write 10 on the hand</string>
+    <string>assign it to x</string>
+    <string>declare y</string>
+    <string>write 8 on the hand</string>
+    <string>assign it to y</string>
+    <string>is x equal to y or x less than 6?</string>
+    <string>Get rid of the bool you just worked out by feeding it the bool Eater</string>
+    <string>work out the boolean logic and write the answer on your hand</string>
+    <string>Get rid of the bool you just worked out by feeding it the bool Eater</string>
+    <string>write whatever x + y is on your hand</string>
+    <string>assign the answer to x</string>
+  </hintForEachInstruction>
+  <consoleOutputs>
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+  </consoleOutputs>
+  <operationsSoFar />
+  <highlightStarts>
+    <int>0</int>
+    <int>8</int>
+    <int>4</int>
+    <int>3</int>
+    <int>0</int>
+    <int>5</int>
+    <int>1</int>
+    <int>3</int>
+    <int>0</int>
+    <int>3</int>
+    <int>0</int>
+    <int>5</int>
+    <int>1</int>
+    <int>0</int>
+    <int>8</int>
+    <int>4</int>
+    <int>3</int>
+    <int>0</int>
+    <int>3</int>
+    <int>0</int>
+    <int>5</int>
+    <int>1</int>
+  </highlightStarts>
+  <highlightLengths>
+    <int>5</int>
+    <int>1</int>
+    <int>4</int>
+    <int>5</int>
+    <int>9</int>
+    <int>1</int>
+    <int>4</int>
+    <int>6</int>
+    <int>10</int>
+    <int>5</int>
+    <int>9</int>
+    <int>2</int>
+    <int>4</int>
+    <int>5</int>
+    <int>5</int>
+    <int>4</int>
+    <int>15</int>
+    <int>19</int>
+    <int>21</int>
+    <int>26</int>
+    <int>5</int>
+    <int>4</int>
+  </highlightLengths>
+  <availableMethodSignatures />
+</Level>

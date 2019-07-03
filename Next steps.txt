@@ -1,0 +1,65 @@
+- There are a few sprites that don't have action text associated with them yet:
+	- The call/return lever <DONE>
+	- The name method button <DONE>
+	- The hand (for when we add in direct value writing) <DONE> Replaced lever with call and return buttons (separate actions like Pete suggested)
+	- The terminal for robot interactions
+	
+- For inside loops (and switches too), we will probably need at least a break statement and accompanying instruction & sprite (possibly 'continue' as well. This operation *could* also be used to let the computer know that we don't want to continue with a loop that is about to iterate (eg while(false) --> break)	AFPO
+
+-Consider adding in a large visible 'X' that lets players know when they've gone wrong...it could be used to prevent smash clicking by delaying the students progress for however many seconds. Even if it isn't visible I think this sort of thing needs to be implemented simply to keep track of the number of mistakes made (for tracking reasons). <PARITALLY DONE> Emails with the number of mistakes made on a certain level are now sent when a new level is loaded (should probably change that to when levels are completed). We decided that the X and game delay should only be implemented if we see that the students are actually doing the spamming method to solve their problem (it should be VERY obvious after even the first prac as errors counts will be huge).
+
+-Clean away whatever is in the players hand when either a garbage collect is done OR you *call* a method. Might want to talk to pete about this one (ask for Petes opinion <ASFPO>). When using this 'clear' with methods, there is no point in remembering the content of the hand as it will be overwritten when we return by whatever is in the users hand.
+
+-With the mouse now looking as if it's plugged into the PIP, we could make said PIP look less out of place by adding in a monitor sprite that surrounds it - ASFPO
+
+-Add a sprite and action associated with writing to the console. The console should output whatever is in the players hand (this is a dangerous suggestion as the output is always of string type and the user can never hold a string...could be bypassed by making the user hold a reference to a string and passing that [this is actually more realistic]). Alternatively I could simply mark the whole program as a console app and the messages that the user would have sent to the sprite would then go to the console (this would of course mean that the various debug messages I added might need to be either removed completely or be made to write to the screen instead.
+An alternative to adding a separate sprite for console write, is to make the user simply treat the write() as if it where any other method...the only difference is the call and return buttons would just do everything in the write() method without the user stepping in at all. <PARTIALLY DONE> I have implemented a temporary kludge fix so that testing and other more important features can still be done, the fix works by adding to the origianl method naming button -> if the method name contains ".Write" or "Console." instead of preparing the method table it just sends the hands content out to the regular black and white console. I opted for this temporary fix becuase the method mechanism may need serious modification when we settle on the best way to allow for things like "g(f(x))", and I thought that instead of wasting time making it do something 'correctly' that is mostly unimortant I could just work around it while we make a decision.
+
+/////////////DO NOW/ for next meeting///////////
+- Make a couple of levels that demonstrate how we can completely bypass use of the calculator. Perhaps also include the option to change the calculators sprite based on level preferences (into a broken one for example...or maybe even to one that isn't there, or alternatively change the calcutor so that it only shows up when the user needs it (either in the level code or when the user asks for it).
+
+/////////////MUST be done //////////////:
+	
+- When starting a new level we occasionally get an exception "Begin must be called successfully before a Draw can be called.", figure out when and why this happening.
+
+- When declaring the first variable of a new level we occasionally get missing textures, which causes things to go awry, figure out when and why this happening. <MOSTLY DONE> This was occuring inside assignCurrentFrameSprites, at the very end, when going through all the newly made sprites and invoking their .LoadContent(Content) methods. The exception being thrown was "An item with the same key has already been added", which makes me think the Content object already one of the textures we needed and we ended up attempting to re-add it, this in turn led to all other stacksprites not getting added as the loadContent loop would end as soon as the exception occured.
+	
+-Create a whole bunch of levels, ranging from very easy to complex
+	-This will allow me to both test that the levels and api are working, as well as evaluate current limitations
+
+- Consider how one might call code such as "x = addTogether(getNthPrime(2),getNthFactorial(3))", the current code function handling mechanism is insufficient for representing this kind of situation, we may need to add a nesting mechanism. For the moment this sort of situation can be avoided by splitting the complex line up into several simpler steps, eg: 
+	int temp1 = getNthPrime(2);
+	int temp1 = getNthFactorial(2); 
+	x = addTogether(temp1, temp2);
+For the moment this will be sufficient as first years, at least for the first few weeks (or even months), tend not to nest function calls inside each other, this means I'll have time to fix it before it gets noticed by them. Additionally if we don't give then levels with nested calls, we wouldn't need to make this representation 	
+	
+/////////////Might not need doing //////////////:
+- Enhance the level code highlighting system so that it highlights the relevant piece of code on a line that needs to be undertaken next. After consulting with pete he said that BODMAS should be enough to guide them and that this would be unnesary (I still think that it might help with for loops, but they can be spread over more than 1 line to bypass this if absolutely necessary)
+
+-Make the hand into the cursor, or vice versa, so that it's clear that you control everything through the hand
+
+/////////////////Totally done //////////////:
+
+- Currently calculator expression substitutions replace variables names with values indiscriminately, for example "x + xy" with 2 being subbed into x gives you -> "2 + 2y"	<DONE> now replaces the first occurence of an entire variable eg xsxs + x + xs (sub 2 into x) -> xsxs + 2 + xs. The only cases that the current method does not handle are ones where the expression contains a string for example 
+"x = " + x
+sub 2 into x yields:
+"2 = " + x
+
+- Add in the various missing pieces of functionality that where either temporarily broken with the addition of the more powerful sprite or made possible through the same addition (this is swap between interactive sprites using the multiRegionClickableSprite class to the dynamicSprite class).
+	-When starting a new game, despite the calculator reading '0', it is being treated as if it's an expression. Initialization probably needs to default to treating it as if it's 'unkown' or needs a new expression. <DONE>
+	-When we declare variables they are not taking the value from the hand <Done> this was fixed when we fixed assigning to variables (mis-typed values as 'Expressions' were the problem.
+	-Reading of variables to the hand needs implementing. <DONE>
+	-Writing to variables from the hand needs implementing. <DONE> Had a major bug created by a mistake in the API...the values type was always coming out as 'Expression', which stopped it from writting to the variable as there was a type mismatch
+	-When parameters are declared, they were simply starting out as blank (even when in copy mode), they need to start out with at least a deafult value (say 0). <DONE> I fixed it so that they take whatever value the player was holding when they were declared as their value.
+	
+-Implement a click on the hand that lets the player input a value directly (this is a feature requested by Pete), it would force them to use a real world calculator, as well as making them understand expressions better (rather than using the automation of the calculator), and finally it would ensure that they understand the Types that certain expressions output (the input from the user would look something like "int 143" or "double 3.2". Strings don't really belong in the hand as they are a heap object and therefore the most that a player can hold from one of them at any time is a single char from the string array. The only potential downside to this sort of operation model is that the user no longer has to tell the computer to explicitly read variables and substitute expression values. <DONE>
+		
+	
+- Now that we have context sensitive text help, we can easily replace the call/return lever with 2 separate sprites (or even leave it as one) to make it clear that there is a big difference between call and return. Pete wanted this from fairly early I just never got round to it. I feel that 2 large vertical arrows (one up and one down) would fit in nicely with the aesthetic of the conveyor belt.	<DONE>			
+	
+-add in an alternative method of declaration where the initial value is not blank or zero, but instead comes from 	whatever value the user is holding in the hand. <DONE>
+
+-Make an action that can consume the value in the hand when it's a boolean used by a conditional, currently without this the player cannot remove the boolean hand value (this could be by-passed via using the garbage collection mechanism to also remove values from the hand). <CHANGED TO> -> With the addition of multiple possible actions on a single sprite in a single state (e.g. read/write for variables) this is no longer a barrier while we are in 'copy' mode. Copy mode basically means that nothing which can store data (including the hand, calculator, parameters, and variables) are ver actually blank (this is more accurate as everything on a computer has to be 0 or 1, even Null simply equates to somthing like a memory address at x0000. <DONE>
+
+- Add an anazyler to the calculator class so that can decide whether the expression it's holding could possibly have variables that need substiting before evaluation is possible (this is a low priority as the restrictions imposed by a level would stop students from try to evaluate an extression like "0", simply by letting them know that they've made a mistake and need to fix it) <DONE> -> circumvented the need for this by making the calculator into a finite state machine, if the player attempts to evaluate something which spits out an unaltered expression the machine goes into the state of "this is an expression which needs substitutions to be made".
+

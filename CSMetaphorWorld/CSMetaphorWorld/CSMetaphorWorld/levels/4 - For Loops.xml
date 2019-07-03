@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="noName" description="testDecription" componentEnabledMode="intbool">
+  <code>int sumToN = 0;
+int N = 3;
+
+//Ordinarily these 3 are on 1 line:
+for(int i = 1;
+    i &lt;= N;
+	   i++); 
+{
+	sumToN = sumToN + i;
+}
+</code>
+  <isComplete>false</isComplete>
+  <lineOrder>
+    <int>1</int>
+    <int>1</int>
+    <int>1</int>
+    <int>2</int>
+    <int>2</int>
+    <int>2</int>
+    <int>5</int>
+    <int>5</int>
+    <int>5</int>
+    <int>6</int>
+    <int>6</int>
+    <int>9</int>
+    <int>9</int>
+    <int>7</int>
+    <int>7</int>
+    <int>6</int>
+    <int>6</int>
+    <int>9</int>
+    <int>9</int>
+    <int>7</int>
+    <int>7</int>
+    <int>6</int>
+    <int>6</int>
+    <int>9</int>
+    <int>9</int>
+    <int>7</int>
+    <int>7</int>
+    <int>6</int>
+    <int>6</int>
+  </lineOrder>
+  <completeLevelInstructions>
+    <string>declarevariable int sumToN</string>
+    <string>directhandwrite int 0</string>
+    <string>assignvalue sumToN</string>
+    <string>declarevariable int N</string>
+    <string>directhandwrite int 3</string>
+    <string>assignvalue N</string>
+    <string>declarevariable int i</string>
+    <string>directhandwrite int 1</string>
+    <string>assignvalue i</string>
+    <string>directhandwrite bool true</string>
+    <string>consumeBool</string>
+    <string>directhandwrite int 1</string>
+    <string>assignvalue sumToN</string>
+    <string>directhandwrite int 2</string>
+    <string>assignvalue i</string>
+    <string>directhandwrite bool true</string>
+    <string>consumeBool</string>
+    <string>directhandwrite int 3</string>
+    <string>assignvalue sumToN</string>
+    <string>directhandwrite int 3</string>
+    <string>assignvalue i</string>
+    <string>directhandwrite bool true</string>
+    <string>consumeBool</string>
+    <string>directhandwrite int 6</string>
+    <string>assignvalue sumToN</string>
+    <string>directhandwrite int 4</string>
+    <string>assignvalue i</string>
+    <string>directhandwrite bool false</string>
+    <string>consumeBool</string>
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string>declare sumToN</string>
+    <string>Write 0 on your hand as an initial value</string>
+    <string>Assign the value to sumToN</string>
+    <string>declare N</string>
+    <string>Write 4 on your hand as an initial value</string>
+    <string>Assign the value to N</string>
+    <string>declare i</string>
+    <string>Write 1 on your hand as an initial value</string>
+    <string>Assign the value to i</string>
+    <string>Write on your hand if i is less than or equal to N</string>
+    <string>Feed the conditional result tot he bool eater</string>
+    <string>Write what sumToN + i is on your hand</string>
+    <string>assign the value to sumToN</string>
+    <string>write what i+1 works out as on your hand</string>
+    <string>assign the value to i</string>
+    <string>Write on your hand if i is less than or equal to N</string>
+    <string>Feed the conditional result tot he bool eater</string>
+    <string>Write what sumToN + i is on your hand</string>
+    <string>assign the value to sumToN</string>
+    <string>write what i++ works out as on your hand</string>
+    <string>assign the value to i</string>
+    <string>Write on your hand if i is less than or equal to N</string>
+    <string>Feed the conditional result to the bool eater</string>
+    <string>Write what sumToN + i is on your hand</string>
+    <string>assign the value to sumToN</string>
+    <string>write what i++ works out as on your hand</string>
+    <string>assign the value to i</string>
+    <string>Write on your hand if i is less than or equal to N</string>
+    <string>Feed the conditional result to the bool eater</string>
+  </hintForEachInstruction>
+  <consoleOutputs>
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+  </consoleOutputs>
+  <operationsSoFar />
+  <highlightStarts>
+    <int>0</int>
+    <int>13</int>
+    <int>4</int>
+    <int>0</int>
+    <int>8</int>
+    <int>4</int>
+    <int>4</int>
+    <int>12</int>
+    <int>8</int>
+    <int>4</int>
+    <int>0</int>
+    <int>10</int>
+    <int>1</int>
+    <int>5</int>
+    <int>4</int>
+    <int>4</int>
+    <int>0</int>
+    <int>10</int>
+    <int>1</int>
+    <int>5</int>
+    <int>4</int>
+    <int>4</int>
+    <int>0</int>
+    <int>10</int>
+    <int>1</int>
+    <int>5</int>
+    <int>4</int>
+    <int>4</int>
+    <int>0</int>
+  </highlightStarts>
+  <highlightLengths>
+    <int>10</int>
+    <int>1</int>
+    <int>9</int>
+    <int>5</int>
+    <int>1</int>
+    <int>4</int>
+    <int>5</int>
+    <int>1</int>
+    <int>4</int>
+    <int>6</int>
+    <int>11</int>
+    <int>10</int>
+    <int>9</int>
+    <int>2</int>
+    <int>1</int>
+    <int>6</int>
+    <int>11</int>
+    <int>10</int>
+    <int>9</int>
+    <int>2</int>
+    <int>1</int>
+    <int>6</int>
+    <int>11</int>
+    <int>10</int>
+    <int>9</int>
+    <int>2</int>
+    <int>1</int>
+    <int>6</int>
+    <int>11</int>
+  </highlightLengths>
+  <availableMethodSignatures />
+</Level>

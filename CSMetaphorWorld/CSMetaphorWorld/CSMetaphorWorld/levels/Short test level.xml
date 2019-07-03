@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Variable operations" description="Just to test levels when they start and finish">
+<availableMethodSignatures>
+</availableMethodSignatures>
+  <code>int x;
+int y;
+</code>
+  <lineOrder>
+    <int>1</int> <!-- Declare x -->
+    <int>2</int> <!-- Declare y -->
+  </lineOrder>
+  <completeLevelInstructions>
+    <string>declarevariable int x</string>
+    <string>declarevariable int y</string>
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string>Declare x</string>
+    <string>Declare y</string>
+  </hintForEachInstruction>
+    <consoleOutputs>
+    <string></string>
+    <string></string>
+  </consoleOutputs>
+  <operationsSoFar />
+</Level>

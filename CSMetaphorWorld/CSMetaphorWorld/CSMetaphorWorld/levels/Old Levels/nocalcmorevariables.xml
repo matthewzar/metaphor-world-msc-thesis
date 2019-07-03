@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Variable operations" description="simple variables">
+<availableMethodSignatures>
+</availableMethodSignatures>
+  <code>int x;
+int y;
+int z;
+x = 23;
+z = x + 4
+y = x * 2;
+y += 4
+z = x % 4;
+z = z + x - y;
+z++;
+</code>
+  <lineOrder>
+    <int>1</int> <!-- Declare x -->
+    <int>2</int> <!-- Declare y -->
+    <int>3</int> <!-- Declare z -->
+	
+    <int>4</int> <!-- directhandwrite int 23 -->
+	<int>4</int> <!-- assignvalue x -->
+	
+	<int>5</int> <!-- directhandwrite int 27 -->
+	<int>5</int> <!-- assignvalue z -->
+	
+	<int>6</int> <!-- directhandwrite int 46 -->
+	<int>6</int> <!-- assignvalue y -->
+	
+	<int>7</int> <!-- directhandwrite int 50 -->
+	<int>7</int> <!-- assignvalue y -->
+	
+	<int>8</int> <!-- directhandwrite int 3 -->
+	<int>8</int> <!-- assignvalue z -->
+	
+	<int>9</int> <!-- directhandwrite int -24 -->
+	<int>9</int> <!-- assignvalue z -->
+	
+	<int>10</int> <!-- directhandwrite int -23 -->
+	<int>10</int> <!-- assignvalue z -->
+  </lineOrder>
+  <completeLevelInstructions>
+    <string>declarevariable int x</string>
+    <string>declarevariable int y</string>
+    <string>declarevariable int z</string>
+	
+    <string>directhandwrite int 23</string>
+	<string>assignvalue x</string>
+
+	<string>directhandwrite int 27</string>
+	<string>assignvalue z</string>
+	
+	<string>directhandwrite int 46</string>
+	<string>assignvalue y</string>
+	
+	<string>directhandwrite int 50</string>
+	<string>assignvalue y</string>
+	
+	<string>directhandwrite int 3</string>
+	<string>assignvalue z</string>
+	
+	<string>directhandwrite int -24</string>
+	<string>assignvalue z</string>
+	
+	<string>directhandwrite int -23</string>
+	<string>assignvalue z</string>
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string>Declare x</string>
+    <string>Declare y</string>
+    <string>Declare z</string>
+
+	<string>Write to the hand</string>
+	<string>Assignment time</string>
+	
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	
+	<string>This is no different to steps involved in "y = x + 2". This is just a shorthand.</string>
+	<string>This is no different to steps involved in "y = x + 2". This is just a shorthand.</string>
+	
+	<string>This is no different to steps involved in "z = x + 4"</string>
+	<string>This is no different to steps involved in "z = x + 4"</string>
+
+	<string>This is no different to steps involved in "x = x + 4", you just have more than one variable to fetch a value for.</string>
+	<string>This is no different to steps involved in "x = x + 4", you just have more than one variable to fetch a value for.</string>
+	
+	<string>"x++" is shorthand for saying "x = x + 1"</string>
+	<string>"x++" is shorthand for saying "x = x + 1"</string>
+  </hintForEachInstruction>
+    <consoleOutputs>
+    <string></string>
+    <string></string>
+    <string></string>
+
+	<string></string>
+	<string></string>
+	
+	<string></string>
+	<string></string>
+	
+	<string></string>
+	<string></string>
+	
+	<string></string>
+	<string></string>
+
+	<string></string>
+	<string></string>
+	
+	<string></string>
+	<string></string>
+  </consoleOutputs>
+  <operationsSoFar />
+</Level>

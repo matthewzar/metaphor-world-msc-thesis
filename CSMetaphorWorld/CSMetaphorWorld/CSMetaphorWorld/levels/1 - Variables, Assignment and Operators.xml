@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="noName" description="testDecription" componentEnabledMode="int">
+  <code>int x;
+x = 23;
+int y = 2;
+int z = x + 4;
+y = x * 2;
+y = y + 4;
+z = x % 4;
+z = z + x - y;
+z++;</code>
+  <isComplete>false</isComplete>
+  <lineOrder>
+    <int>1</int>
+    <int>2</int>
+    <int>2</int>
+    <int>3</int>
+    <int>3</int>
+    <int>3</int>
+    <int>4</int>
+    <int>4</int>
+    <int>4</int>
+    <int>5</int>
+    <int>5</int>
+    <int>6</int>
+    <int>6</int>
+    <int>7</int>
+    <int>7</int>
+    <int>8</int>
+    <int>8</int>
+    <int>9</int>
+    <int>9</int>
+  </lineOrder>
+  <completeLevelInstructions>
+    <string>declarevariable int x</string>
+    <string>directhandwrite int 23</string>
+    <string>assignvalue x</string>
+    <string>declarevariable int y</string>
+    <string>directhandwrite int 2</string>
+    <string>assignvalue y</string>
+    <string>declarevariable int z</string>
+    <string>directhandwrite int 27</string>
+    <string>assignvalue z</string>
+    <string>directhandwrite int 46</string>
+    <string>assignvalue y</string>
+    <string>directhandwrite int 50</string>
+    <string>assignvalue y</string>
+    <string>directhandwrite int 3</string>
+    <string>assignvalue z</string>
+    <string>directhandwrite int -24</string>
+    <string>assignvalue z</string>
+    <string>directhandwrite int -23</string>
+    <string>assignvalue z</string>
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string>Define the local integer variable x</string>
+    <string>Write the integer value 23 on your hand</string>
+    <string>Write what you have in your hand to the variable x</string>
+    <string>Define the local integer variable y</string>
+    <string>Write the integer value 2 on your hand</string>
+    <string>Write what you have in your hand to the variable y</string>
+    <string>Define the local integer variable z</string>
+    <string>Work out what 23 + 4 is and write the result on your hand</string>
+    <string>Write what you have in your hand to the variable z</string>
+    <string>Work out what 23 X 2  is and write the result on your hand   </string>
+    <string>Write what you have in your hand to the variable y</string>
+    <string>Work out what 46 + 4  is and write the result on your hand   </string>
+    <string>Write what you have in your hand to the variable y</string>
+    <string>Work out what the remainder is when you divide 23 by 4, and write the result on your hand   </string>
+    <string>Write what you have in your hand to the variable z</string>
+    <string>Work out what 3 + 23 - 50  is and write the result on your hand</string>
+    <string>Write what you have in your hand to the variable z</string>
+    <string>Work out what -24 + 1  is and write the result on your hand</string>
+    <string>Write what you have in your hand to the variable z</string>
+  </hintForEachInstruction>
+  <consoleOutputs>
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+  </consoleOutputs>
+  <operationsSoFar />
+  <highlightStarts>
+    <int>0</int>
+    <int>4</int>
+    <int>0</int>
+    <int>0</int>
+    <int>8</int>
+    <int>4</int>
+    <int>0</int>
+    <int>8</int>
+    <int>4</int>
+    <int>4</int>
+    <int>0</int>
+    <int>4</int>
+    <int>0</int>
+    <int>4</int>
+    <int>0</int>
+	<int>4</int>
+    <int>0</int>
+    <int>1</int>
+    <int>0</int>
+  </highlightStarts>
+  <highlightLengths>
+    <int>5</int>
+    <int>2</int>
+    <int>4</int>
+    <int>5</int>
+    <int>1</int>
+    <int>4</int>
+    <int>5</int>
+    <int>5</int>
+    <int>4</int>
+    <int>5</int>
+    <int>4</int>
+    <int>5</int>
+    <int>4</int>
+    <int>5</int>
+    <int>4</int>
+	<int>9</int>
+    <int>4</int>
+    <int>2</int>
+    <int>1</int>
+  </highlightLengths>
+  <availableMethodSignatures />
+</Level>

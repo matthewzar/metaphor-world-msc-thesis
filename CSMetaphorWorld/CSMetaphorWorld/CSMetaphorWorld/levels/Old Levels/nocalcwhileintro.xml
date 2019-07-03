@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Introduction to While Loops" description="While loops are the most fundamental of the iteration structures and should not be overlooked">
+<availableMethodSignatures>
+</availableMethodSignatures>
+  <code>int foo = 1;
+while(foo &lt; 5)
+{
+	foo = foo + 1;
+}
+Console.WriteLine(foo);
+</code>
+  <lineOrder>
+    <int>1</int> <!-- directhandwrite int 1 -->
+	<int>1</int> <!-- declare -->
+	
+	<int>2</int> <!-- directhandwrite bool true -->
+	
+	<int>4</int> <!-- directhandwrite int 2 -->
+	<int>4</int> <!-- assign -->
+	
+	<int>2</int> <!-- directhandwrite bool true -->
+	
+	<int>4</int> <!-- directhandwrite int 3 -->
+	<int>4</int> <!-- assign -->
+	
+	<int>2</int> <!-- directhandwrite bool true -->
+	
+	<int>4</int> <!-- directhandwrite int 4 -->
+	<int>4</int> <!-- assign -->
+	
+	<int>2</int> <!-- directhandwrite bool true -->
+	
+	<int>4</int> <!-- directhandwrite int 5 -->
+	<int>4</int> <!-- assign -->
+	
+	<int>2</int> <!-- directhandwrite bool false -->
+	
+	<int>6</int> <!-- read foo-->
+	<int>6</int> <!-- write hand -->
+	
+  </lineOrder>
+  <completeLevelInstructions>
+	<string>directhandwrite int 1</string> 			<!-- 1 -->
+	<string>declarevariable int foo</string> 			<!-- 1 -->
+	
+	<string>directhandwrite bool true</string> 	<!-- 2 -->
+	
+	<string>directhandwrite int 2</string>		<!-- 4 -->
+	<string>assignvalue foo</string> 					<!-- 4 -->
+	
+	<string>directhandwrite bool true</string> 	<!-- 2 -->
+	
+	<string>directhandwrite int 3</string>		<!-- 4 -->
+	<string>assignvalue foo</string> 					<!-- 4 -->
+	
+	<string>directhandwrite bool true</string> 	<!-- 2 -->
+	
+	<string>directhandwrite int 4</string>		<!-- 4 -->
+	<string>assignvalue foo</string> 					<!-- 4 -->
+	
+	<string>directhandwrite bool true</string> 	<!-- 2 -->
+	
+	<string>directhandwrite int 5</string>		<!-- 4 -->
+	<string>assignvalue foo</string> 					<!-- 4 -->
+	
+	<string>directhandwrite bool false</string> 	<!-- 2 -->
+
+	<string>readvariable foo</string>					<!-- 6 -->
+	<string>consolewrite</string> 						<!-- 6 -->
+	
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string></string> 			<!-- 1 -->
+	<string></string> 
+	
+	<string></string> 
+	
+	<string></string> 
+	<string></string> 
+	
+	<string></string> 
+	
+	<string></string> 
+	<string></string> 
+	
+	<string></string> 
+	
+	<string></string> 
+	<string></string> 
+	
+	<string></string> 
+
+	<string>Read the value of foo from the actual variable</string>			<!-- 6 -->
+	<string>Write it to the console</string> <!-- 6 -->
+
+  </hintForEachInstruction>
+    <consoleOutputs>
+	<string></string> 			<!-- 1 -->
+	<string></string> 
+	
+	<string></string> 
+	
+	<string></string> 
+	<string></string> 
+	
+	<string></string> 
+	
+	<string></string> 
+	<string></string> 
+	
+	<string></string> 
+	
+	<string></string> 
+	<string></string> 
+	
+	<string></string> 
+
+	<string></string>			<!-- 6 -->
+	<string>12</string>
+  </consoleOutputs>
+  <operationsSoFar />
+</Level>

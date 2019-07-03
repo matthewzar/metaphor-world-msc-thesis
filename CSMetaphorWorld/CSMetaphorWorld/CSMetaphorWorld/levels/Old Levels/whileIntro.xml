@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Introduction to While Loops" description="While loops are the most fundamental of the iteration structures and should not be overlooked">
+<availableMethodSignatures>
+</availableMethodSignatures>
+  <code>int foo = 1;
+while(foo &lt; 5)
+{
+	foo = foo + 1;
+}
+Console.WriteLine(foo);
+</code>
+  <lineOrder>
+    <int>1</int> <!-- expresssion 1 -->
+	<int>1</int> <!-- eval -->
+	<int>1</int> <!-- read -->
+	<int>1</int> <!-- declare -->
+	
+	<int>2</int> <!-- expre foo < 1 -->
+	<int>2</int> <!-- read foo-->
+	<int>2</int> <!-- sub foo -->
+	<int>2</int> <!-- Evaluate -->
+	<int>2</int> <!-- read to hand -->
+	
+	<int>4</int> <!-- expresssion foo+4 -->
+	<int>4</int> <!-- read foo-->
+	<int>4</int> <!-- sub foo -->
+	<int>4</int> <!-- eval -->
+	<int>4</int> <!-- read -->
+	<int>4</int> <!-- assign -->
+	
+	<int>2</int> <!-- expre foo < 1 -->
+	<int>2</int> <!-- read foo-->
+	<int>2</int> <!-- sub foo -->
+	<int>2</int> <!-- Evaluate -->
+	<int>2</int> <!-- read to hand -->
+	
+	<int>4</int> <!-- expresssion foo+4 -->
+	<int>4</int> <!-- read foo-->
+	<int>4</int> <!-- sub foo -->
+	<int>4</int> <!-- eval -->
+	<int>4</int> <!-- read -->
+	<int>4</int> <!-- assign -->
+	
+	<int>2</int> <!-- expre foo < 1 -->
+	<int>2</int> <!-- read foo-->
+	<int>2</int> <!-- sub foo -->
+	<int>2</int> <!-- Evaluate -->
+	<int>2</int> <!-- read to hand -->
+	
+	<int>4</int> <!-- expresssion foo+4 -->
+	<int>4</int> <!-- read foo-->
+	<int>4</int> <!-- sub foo -->
+	<int>4</int> <!-- eval -->
+	<int>4</int> <!-- read -->
+	<int>4</int> <!-- assign -->
+	
+	<int>2</int> <!-- expre foo < 1 -->
+	<int>2</int> <!-- read foo-->
+	<int>2</int> <!-- sub foo -->
+	<int>2</int> <!-- Evaluate -->
+	<int>2</int> <!-- read to hand -->
+	
+	<int>4</int> <!-- expresssion foo+4 -->
+	<int>4</int> <!-- read foo-->
+	<int>4</int> <!-- sub foo -->
+	<int>4</int> <!-- eval -->
+	<int>4</int> <!-- read -->
+	<int>4</int> <!-- assign -->
+	
+	<int>2</int> <!-- expre foo < 1 -->
+	<int>2</int> <!-- read foo-->
+	<int>2</int> <!-- sub foo -->
+	<int>2</int> <!-- Evaluate -->
+	<int>2</int> <!-- read to hand -->
+
+	<int>6</int> <!-- expresssion foo-->
+	<int>6</int> <!-- read foo-->
+	<int>6</int> <!-- sub foo -->
+	<int>6</int> <!-- eval -->
+	<int>6</int> <!-- read -->
+	<int>6</int> <!-- write hand -->
+	
+  </lineOrder>
+  <completeLevelInstructions>
+	<string>calculatorexpression 1</string> 			<!-- 1 -->
+	<string>evaluatecalculator</string> 				<!-- 1 -->
+	<string>calculatortohand</string> 					<!-- 1 -->
+	<string>declarevariable int foo</string> 			<!-- 1 -->
+	
+	<string>calculatorexpression foo &lt; 4</string> 	<!-- 2 -->
+	<string>readvariable foo</string>					<!-- 2 -->
+	<string>substituteexpression foo</string>			<!-- 2 -->
+	<string>evaluatecalculator</string> 				<!-- 2 -->
+	<string>calculatortohand</string>  					<!-- 2 -->
+	
+	<string>calculatorexpression foo + 1</string>		<!-- 4 -->
+	<string>readvariable foo</string>					<!-- 4 -->
+	<string>substituteexpression foo</string> 			<!-- 4 -->
+	<string>evaluatecalculator</string> 				<!-- 4 -->
+	<string>calculatortohand</string>  					<!-- 4 -->
+	<string>assignvalue foo</string> 					<!-- 4 -->
+	
+	<string>calculatorexpression foo &lt; 4</string> 	<!-- 2 -->
+	<string>readvariable foo</string>					<!-- 2 -->
+	<string>substituteexpression foo</string>			<!-- 2 -->
+	<string>evaluatecalculator</string> 				<!-- 2 -->
+	<string>calculatortohand</string>  					<!-- 2 -->
+	
+	<string>calculatorexpression foo + 1</string>		<!-- 4 -->
+	<string>readvariable foo</string>					<!-- 4 -->
+	<string>substituteexpression foo</string> 			<!-- 4 -->
+	<string>evaluatecalculator</string> 				<!-- 4 -->
+	<string>calculatortohand</string>  					<!-- 4 -->
+	<string>assignvalue foo</string> 					<!-- 4 -->
+	
+	<string>calculatorexpression foo &lt;4</string> 	<!-- 2 -->
+	<string>readvariable foo</string>					<!-- 2 -->
+	<string>substituteexpression foo</string>			<!-- 2 -->
+	<string>evaluatecalculator</string> 				<!-- 2 -->
+	<string>calculatortohand</string>  					<!-- 2 -->
+	
+	<string>calculatorexpression foo + 1</string>		<!-- 4 -->
+	<string>readvariable foo</string>					<!-- 4 -->
+	<string>substituteexpression foo</string> 			<!-- 4 -->
+	<string>evaluatecalculator</string> 				<!-- 4 -->
+	<string>calculatortohand</string>  					<!-- 4 -->
+	<string>assignvalue foo</string> 					<!-- 4 -->
+
+	
+	<string>calculatorexpression foo &lt; 4</string> 	<!-- 2 -->
+	<string>readvariable foo</string>					<!-- 2 -->
+	<string>substituteexpression foo</string>			<!-- 2 -->
+	<string>evaluatecalculator</string> 				<!-- 2 -->
+	<string>calculatortohand</string>  					<!-- 2 -->
+	
+
+	<string>calculatorexpression foo</string>			<!-- 6 -->
+	<string>readvariable foo</string>					<!-- 6 -->
+	<string>substituteexpression foo</string> 			<!-- 6 -->
+	<string>evaluatecalculator</string> 				<!-- 6 -->
+	<string>calculatortohand</string>  					<!-- 6 -->
+	<string>consolewrite</string> 						<!-- 6 -->
+	
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string></string> 			<!-- 1 -->
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	
+	
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	<string></string> 
+	
+
+	<string>"foo" is just an expression</string>			<!-- 6 -->
+	<string>find a value</string>							<!-- 6 -->
+	<string>substitute it in</string> 						<!-- 6 -->
+	<string>Evaluate it</string> 							<!-- 6 -->
+	<string>Bring it to the hand</string>  					<!-- 6 -->
+	<string>Write it to the console (impossible right now)</string> <!-- 6 -->
+
+  </hintForEachInstruction>
+    <consoleOutputs>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string></string>
+	<string>12</string>
+  </consoleOutputs>
+  <operationsSoFar />
+</Level>

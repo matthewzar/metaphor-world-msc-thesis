@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="noName" description="testDecription" componentEnabledMode="intboolmethods">
+  <code>private int sampleMethod(int num)
+{
+	return num / 2;
+}
+  
+int x;
+x = 9;
+int y = 1;
+
+if(x &lt; 10)
+	y = x + y;
+else
+	y = x - y;
+
+while(y &gt;= x)
+	x = x + 1;
+
+for(int i = 10; i &gt; 9; i--)
+	y = y * 2;
+
+y = sampleMethod(x + y);</code>
+  <isComplete>false</isComplete>
+  <lineOrder>
+    <int>6</int>
+    <int>7</int>
+    <int>7</int>
+    <int>8</int>
+    <int>8</int>
+    <int>8</int>
+    <int>10</int>
+    <int>10</int>
+    <int>11</int>
+    <int>11</int>
+    <int>15</int>
+    <int>15</int>
+    <int>16</int>
+    <int>16</int>
+    <int>15</int>
+    <int>15</int>
+    <int>16</int>
+    <int>16</int>
+    <int>15</int>
+    <int>15</int>
+    <int>18</int>
+    <int>18</int>
+    <int>18</int>
+    <int>18</int>
+    <int>18</int>
+    <int>19</int>
+    <int>19</int>
+    <int>18</int>
+    <int>18</int>
+    <int>18</int>
+    <int>18</int>
+    <int>21</int>
+    <int>21</int>
+    <int>21</int>
+    <int>21</int>
+    <int>3</int>
+    <int>3</int>
+    <int>21</int>
+  </lineOrder>
+  <completeLevelInstructions>
+    <string>declarevariable int x</string>
+    <string>directhandwrite int 9</string>
+    <string>assignvalue x</string>
+    <string>declarevariable int y</string>
+    <string>directhandwrite int 1</string>
+    <string>assignvalue y</string>
+    <string>directhandwrite bool true</string>
+    <string>consumeBool</string>
+    <string>directhandwrite int 10</string>
+    <string>assignvalue y</string>
+    <string>directhandwrite bool true</string>
+    <string>consumeBool</string>
+    <string>directhandwrite int 10</string>
+    <string>assignvalue x</string>
+    <string>directhandwrite bool true</string>
+    <string>consumeBool</string>
+    <string>directhandwrite int 11</string>
+    <string>assignvalue x</string>
+    <string>directhandwrite bool false</string>
+    <string>consumeBool</string>
+    <string>declarevariable int i</string>
+    <string>directhandwrite int 10</string>
+    <string>assignvalue i</string>
+    <string>directhandwrite bool true</string>
+    <string>consumeBool</string>
+    <string>directhandwrite int 20</string>
+    <string>assignvalue y</string>
+    <string>directhandwrite int 9</string>
+    <string>assignvalue i</string>
+    <string>directhandwrite bool false</string>
+    <string>consumeBool</string>
+    <string>preparemethod sampleMethod(int num)</string>
+    <string>directhandwrite int 31</string>
+    <string>assignparameter num</string>
+    <string>callfunction</string>
+    <string>directhandwrite int 15</string>
+    <string>return</string>
+    <string>assignvalue y</string>
+  </completeLevelInstructions>
+  <hintForEachInstruction>
+    <string>Declare x</string>
+    <string>Write 9 on your hand</string>
+    <string>Assign your hands value to x</string>
+    <string>Declare y</string>
+    <string>Write 1 on your hand</string>
+    <string>Assign your hands value to y</string>
+    <string>Write true on your hand</string>
+    <string>Feed the conditionals result to the bool eater</string>
+    <string>Write 10 on your hand</string>
+    <string>Assign your hands value to y</string>
+    <string>Write true on your hand</string>
+    <string>Feed the conditionals result to the bool eater</string>
+    <string>Write 10 on your hand</string>
+    <string>Write 10 to x</string>
+    <string>Write true on your hand</string>
+    <string>Feed the conditionals result to the bool eater</string>
+    <string>Write 11 on your hand</string>
+    <string>Assign your hands value to x</string>
+    <string>Write false on your hand</string>
+    <string>Feed the conditionals result to the bool eater</string>
+    <string>Declare i</string>
+    <string>Write 10 on your hand</string>
+    <string>Assign your hands value to i</string>
+    <string>Write true on your hand</string>
+    <string>Feed the conditionals result to the bool eater</string>
+    <string>Write 20 on your hand</string>
+    <string>Assign your hands value to y</string>
+    <string>Write 9 on your hand</string>
+    <string>Assign your hands value to i</string>
+    <string>Write false on your hand</string>
+    <string>Feed the conditionals result to the bool eater</string>
+    <string>Select sampleMethod(int num) to prepare for calling</string>
+    <string>Write 31 on your hand</string>
+    <string>Assign your hand value to the num parameter</string>
+    <string>Call the method</string>
+    <string>Write 15 on your hand</string>
+    <string>return</string>
+    <string>Assign your hands value (the return value) to y</string>
+  </hintForEachInstruction>
+  <consoleOutputs>
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+    <string />
+  </consoleOutputs>
+  <operationsSoFar />
+  <highlightStarts>
+    <int>0</int>
+    <int>4</int>
+    <int>0</int>
+    <int>0</int>
+    <int>8</int>
+    <int>4</int>
+    <int>3</int>
+    <int>0</int>
+    <int>5</int>
+    <int>1</int>
+    <int>6</int>
+    <int>0</int>
+    <int>5</int>
+    <int>1</int>
+    <int>6</int>
+    <int>0</int>
+    <int>5</int>
+    <int>1</int>
+    <int>6</int>
+    <int>0</int>
+    <int>4</int>
+    <int>12</int>
+    <int>8</int>
+    <int>16</int>
+    <int>14</int>
+    <int>5</int>
+    <int>1</int>
+    <int>24</int>
+    <int>23</int>
+    <int>16</int>
+    <int>14</int>
+    <int>4</int>
+    <int>17</int>
+    <int>16</int>
+    <int>4</int>
+    <int>8</int>
+    <int>1</int>
+    <int>0</int>
+  </highlightStarts>
+  <highlightLengths>
+    <int>5</int>
+    <int>1</int>
+    <int>4</int>
+    <int>5</int>
+    <int>1</int>
+    <int>4</int>
+    <int>6</int>
+    <int>10</int>
+    <int>5</int>
+    <int>4</int>
+    <int>6</int>
+    <int>13</int>
+    <int>5</int>
+    <int>4</int>
+    <int>6</int>
+    <int>13</int>
+    <int>5</int>
+    <int>4</int>
+    <int>6</int>
+    <int>13</int>
+    <int>5</int>
+    <int>2</int>
+    <int>4</int>
+    <int>5</int>
+    <int>8</int>
+    <int>5</int>
+    <int>4</int>
+    <int>2</int>
+    <int>1</int>
+    <int>5</int>
+    <int>8</int>
+    <int>13</int>
+    <int>5</int>
+    <int>7</int>
+    <int>19</int>
+    <int>7</int>
+    <int>7</int>
+    <int>4</int>
+  </highlightLengths>
+  <availableMethodSignatures>
+    <string>Console.WriteLine(char valueToWrite)</string>
+    <string>sampleMethod(int num)</string>
+  </availableMethodSignatures>
+</Level>

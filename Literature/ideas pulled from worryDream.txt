@@ -1,0 +1,36 @@
+http://worrydream.com/LearnableProgramming/
+
+People understand things that they can see and touch.
+In order for a learner to understand what the program is actually doing, the program flow must be made visible and tangible.
+
+---------------------
+
+For introducing loops rather start with whiles
+This:
+int i = 0;
+while (i < 200
+{
+	line(i,0,200,i);
+	i = i + 14
+
+
+is easier to see flow of control in than this:
+for(int i = 0; i < 200; i++)
+	line(i,0,200,i);
+
+----------------------
+
+Make flow visible
+For example the dots when consitions are met
+
+----------------------
+
+If you are serious about creating a programming environment for learning, the number one thing you can do -- more important than 
+live coding or adjustable constants, more important than narrated lessons or discussion forums, more important than badges or 
+points or ultra-points or anything else -- is to show the data.
+
+----------------------
+
+Could make an interactive 'map' of the program that the user needs to follow which could incorporate all the things mentioned
+here as necesarry for udnerstanding/leanring programming. If a user gets stuck with a program, they can forfeit points or something
+in order to take an 'automated' tour of the code (either in the 'map' or the 3D world or both)

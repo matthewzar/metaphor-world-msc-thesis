@@ -1,0 +1,221 @@
+a{color:#064c82}
+A IMG{border:0}
+A:visited{COLOR:#666666}
+BODY{MARGIN:0px;FONT-FAMILY:Arial;BACKGROUND-COLOR:white;font-size:smaller}
+.bodyborder{margin-left:30px;margin-right:30px;background-color:transparent}
+DIV.main_content{background-image:url(/_/static/bg.gif);background-color:#EFEFEF;padding:10px 0 10px 0;position:relative;/* important for display of floats! */}
+.body{background-color:white;padding:0 20px 20px 20px}
+.clear{clear:both;overflow:hidden}
+table{margin:0;padding:0;border:none}
+TD{vertical-align:top}
+DIV.separator1 DIV{border-bottom:#CCCCCC 1px dashed;margin:10px 0 10px 0}
+DIV.separator1{font-size:1px}
+#topline{text-align:right;font-size:8pt;white-space:nowrap;float:right}
+#topline IMG{border:none;width:14px;height:14px}
+.count{font-size:.8em;font-weight:normal}
+.pub_date {background-color:white;margin:0 0 40px 0}
+.pub_date TD {padding:0 20px 20px 20px}
+.pub_date .year{font-size:1.3em;margin-top:12px}
+.pub_date .months{margin-left:12px}
+.pub_date .months A {white-space:nowrap}
+
+.cal_years{background-color:white;border:white 10px solid;margin-bottom:40px}
+TABLE.cal_years TH{font-weight:bolder;font-size:larger;background-color:#DEDFDE}
+TABLE.cal_years TD {color:#CCCCCC;padding:5px 3px;font-size:1em}
+
+div.cal_month{background-color:white;	margin-bottom:40px;width:15em}
+div.cal_month table{background-color:white;border:white 20px solid}
+div.cal_month th{font-size:.9em;font-weight:normal;color:#CCCCCC;padding-right:5px;text-align:right}
+div.cal_month td{color:#CCCCCC;font-size:1em}
+
+DIV.cal_days{margin-bottom:40px}
+DIV.cal_days TABLE{background-color:white;border-left:white 20px solid;border-right:white 20px solid;border-bottom:white 17px solid;border-top:white 15px solid}
+DIV.cal_days TH{font-weight:bolder;padding-top:3px;border:1px solid #CCCCCC;color:#CCCCCC}
+DIV.cal_days TD{font-size:medium;text-align:right;padding:3px 5px}
+
+DIV.cal_days_hl{padding:16px 0 15px 0}
+DIV.cal_days_hl TABLE{background-color:#EFEFEF;border-left:#EFEFEF 20px solid;border-right:#EFEFEF 20px solid;border-bottom:#EFEFEF 17px solid;border-top:#EFEFEF 15px solid}
+DIV.cal_days_hl TH{font-weight:bolder;padding-top:3px;border:1px solid #85A8C2;color:#85A8C2;text-align:center}
+DIV.cal_days_hl TD{font-size:medium;text-align:right;padding:3px 5px}
+.cal_hl {background-color:#EFEFEF;margin:-1px}
+.cal_head {font-weight:bold; color:#000000; text-align:center}
+DIV.cal_mname {width:130px}
+
+#menu { background-color:#FFFFFF; font-size:1.1em; margin: 0 0 12px 0; padding:13px 0; width:100%;white-space:nowrap}
+#menu strong {margin: 0 20px 0 26px; padding:13px 0;}
+#menu a, #menu a:visited, #menu .active{color:#064c82; font-size:1.3em; padding:13px 16px;}
+#menu .active {background-color:#85A8C2; color:#FFFFFF!important; text-decoration:none;}
+
+#menu_block { background-color:#FFFFFF; font-size:1.1em; margin:4px; padding:4px;}
+#menu_block strong {margin:4px; padding:4px;}
+#menu_block a, #menu_block a:visited, #menu_block .active{color:#064c82; font-size:1.3em; padding:4px;margin:4px; display:block;}
+#menu_block .active {background-color:#85A8C2; color:#FFFFFF!important; text-decoration:none;}
+
+#bottom_nav p {margin:0 0 0 5px}
+
+Label{font-weight:normal}
+.results{background-color:white;border:white 15px solid;border-top:white 10px solid}
+TABLE.results TH{text-align:left;padding:5px 4px 5px 6px;font-size:.8em}
+TABLE.results TD{padding:4px 5px 7px 7px}
+TABLE.results TR.odd{background-color:#F8F8F8}
+TABLE.results IMG{margin-left:3px}
+th.words, td.words{text-align:right}
+td.date{text-align:right}
+A.date{white-space:nowrap}
+A.disabled {color:gray;text-decoration:none}
+span.resultscount{padding:0 20px 0 20px;background-color:white}
+span.resultscount A, DIV.resultscount A:visited{color:#064c82}
+span.resultscount IMG{border:0;margin-bottom:-1px;width:9px;height:9px}
+.prevnext{margin:0 0 0 10px;font-weight:bold}
+
+#article_text{background-color:white;padding:0 10px 10px 20px}
+#article_title{padding:15px 0 0 0}
+#article_footer{padding:15px 0 0 0}
+
+#article_cp{padding:0 0 0 10px}
+#article_cp table, table.hp_browse{border:10px solid white}
+#article_cp caption, .hp_browse caption, .hp_module .head{text-align:left;font-size:1.2em;font-weight:bold;background-color:#85A8C2;color:white;padding:3px 5px 3px 9px}
+#article_cp td.tools{padding:0 10px 10px 0;font-size:.8em;white-space:nowrap}
+#article_cp .tools a{font-size:.8em;padding:0 5px 0 0}
+#article_cp .tools img{padding:0 2px 0 0;vertical-align:middle}
+#article_cp .even{background-color:white}
+.odd{background-color:#f6faff}
+#article_cp th, #article_cp td{font-size:.75em;padding:4px 3px 5px 4px}
+#article_cp th{text-align:right;font-weight:normal;vertical-align:top}
+
+.col{padding-right:10px}
+.copy, #copy_publisher, #copy_gale{font-size:.8em;color:#666666}
+#copy_publisher, #copy_gale{margin:5px 0}
+.copy{margin-bottom:700px}
+
+DIV.breadcrumbs{margin:10px 10px 10px 30px}
+DIV.breadcrumbs a{white-space:nowrap}
+DIV.breadcrumbs td, DIV.breadcrumbs div{font-size:.8em}
+DIV.breadcrumbs img{top:1px;position:relative}
+.breadcrumb_arrow{margin:0 5px}
+
+DIV.author_name{margin-bottom:10px}
+.highlight{font-weight:bold}
+.a_named{font-weight:bold;font-size:1.5em;color:#000000;/*position:relative;top:2px;*/}
+a.alphabet{color:#999999;margin:20px 0 5px 0}
+span.alphabet_na{color:#CCCCCC}
+
+h1, h2{background-color:white;padding:10px 5px 10px 20px;font-weight:normal;margin:0;font-size:1.8em}
+h1 strong, h2 strong {font-weight:bold}
+h2{margin-top:10px;font-size:1.4em}
+h3{font-weight:normal}
+h4 {font-size:1.1em; margin:10px 0 5px 0;}
+h5{margin-bottom:1pt}
+ul{list-style-type:none}
+ul.nav_topics{margin:0;padding:0 5px 10px 20px;white-space:nowrap}
+div.nav_pubcat, div.nav_pubcat_expand{background-color:white;padding:10px 10px 20px 20px}
+ul.nav_pubcat{margin:0 0 10px 0;padding:0}
+ul.nav_pubcat-sub{margin-bottom:10px}
+ul.nav_pubdate{}
+ul.nav_pubdate li{display:inline;padding:0 5px 0 0}
+.wrapper-block{background-color:white}
+.nowrap{white-space:nowrap}
+
+/* lit-specific styles */
+DIV.alphabet{margin:10px 0;padding:10px 0;background-color:white;width:37em}
+DIV.alphabet H2{display:inline;padding:0 20px 0 20px}
+
+DIV.Ov{BORDER-left:lightgray 1px solid;PADDING-LEFT:5px;BACKGROUND-COLOR:white;max-width:575px}
+SPAN.by{PADDING-RIGHT:5px;PADDING-LEFT:5px;FLOAT:right;COLOR:#809E83}
+SPAN.by A {color:#636363;TEXT-DECORATION:none}
+DIV.Ov A{TEXT-DECORATION:none}
+.OvTitle{TEXT-DECORATION:underline}
+.OvDescr{COLOR:black}
+.OvURL{font-size:.8em}
+.AdSep{margin-top:.5em}
+#right_bunner{padding-left:10px}
+.hint{display:none;FONT:normal normal normal 1em Arial;BORDER:black 1px solid;PADDING:2px;TEXT-TRANSFORM:none;WIDTH:300px;COLOR:black;TEXT-ALIGN:left;POSITION:absolute;BACKGROUND-COLOR:oldlace;TEXT-DECORATION:none;margin-left:6px}
+.hint HR{WIDTH:80%;COLOR:black;HEIGHT:1px}
+.hint H1, .hint H2, .hint H3{FONT:normal normal bold 1.2em Arial;background-color:transparent}
+SPAN.flw{FONT-WEIGHT:bold;FONT-SIZE:8pt;COLOR:red;FONT-FAMILY:Tahoma}
+A.tip{color:black}
+B A.tip,EM A.tip{MARGIN-RIGHT:2pt}
+
+img.rss_small {border:none; margin:0 0 0 2px;}
+img.rss_big {border:none; margin:0 0 -2px 4px;}
+
+.datePopUp {position:absolute;visibility:hidden;margin-top:.3em;text-align:left;background-color:White;border:1px black solid;font-size:.8em;padding:6pt;width:320px}
+.datePopUp div.morePop, a.morePop {font-size:1em;font-weight:bold;text-decoration:none;text-align:right}
+#TopLevelNav TH {font-size:.7em;font-weight:normal}
+#TopLevelNav TD {font-size:.64em;padding:0 1em 0 1em;text-align:center}
+.error_txt {font-size:.8em; color:#FF0000}
+#login {padding:10px 5px 0 0}
+#login FORM {margin:0}
+#login TD, #login TH, #login A, #login div, #login INPUT, #login B {font-size:8pt;white-space:nowrap}
+input.login_in{height:16px; width:60px; border:solid 1px #b7b9bc;}
+input.login_btn{vertical-align:top; height:20px; width:40px}
+div.loginError {font-size:7pt; color:#FF0000;}
+#login_panel {width: 300px}
+#login_panel TD {white-space:nowrap}
+table.userInfo {width:300px;}
+table.userInfo input{width:100%;}
+div.userPrefs {margin:20px 0;}
+span.userPrefs {font-weight:bold;}
+.reg_panel {padding:12px}
+.reg_panel legend{font-weight:bold;font-size:1.2em}
+div.art_submit {font-size:10pt; font-family:Arial; }
+div.art_headers {width:600px; font-size:1.1em; font-weight:700; font-family:Arial;}
+div.art_community {margin:-18px 0 0 200px;}
+div.note {font-size:8pt; font-family:Arial; margin:0;}
+div.rating {text-align:left; margin: 8px 0;}
+img.rating {border:none; margin:0 0 0 0;}
+img.usr_rating {border:none;margin:0 0 0 0; cursor: pointer;}
+span.rating {font-size:8pt; font-weight:bold; font-family:Arial, Helvetica, sans-serif;}
+div.comments {font-size:10pt; font-family:Arial; border:solid 1px #CECECE}
+div.comments h4 {background-color:#EFEFEF; width: 100%;font-size:10pt; font-family:Arial; font-weight:bold; border-bottom:solid 1px #CECECE;margin:0}
+span.comments {font-weight:bolder;}
+div.usr_comment {margin:10px;}
+div.usr_comment textarea{width:100%;}
+div.usr_comment input.usr_comment{width:100%;}
+div.comm_list {margin:20px 0 20px 0; padding:5px; border:solid 1px #b7b9bc}
+div.comm_item {font-family:Arial; font-size: 9pt;margin:20px 0;}
+img.comm_item {border: 0; float:left;}
+div.comm_body {margin:0 0 0 60px;}
+div.comm_title {font-weight:bold; text-align:left;}
+span.comm_user {font-weight:bolder; color:#000066;}
+span.comm_user_title {font-style:oblique;}
+span.comm_time {font-weight:normal; font-size:7pt; color:#666666;}
+div.comm_text {text-align:left;}
+div.comm_headspacer {margin: 10px 0 0 0; display:block;}
+div.comm_header {margin:10px 0 0 0; padding:10px; background-color:#EFEFEF;border:solid 1px #CECECE; }
+div.comm_header a{font-size:12pt; font-weight:bold;}
+div.comm_art {margin: 10px 0 0 0; text-align:justify; display:block; width:100%;}
+div.comm_ctrl {margin: 20px 0 0 0; padding: 5px 0; border-bottom:solid 1px #CCCCCC;}
+.spacer {padding:20px; }
+a.user {color:#000066; text-decoration:none;}
+a.user:visited {color:#000066;}
+a.moderator {color:#006600; text-decoration:none;}
+a.moderator:visited {color:#006600;}
+a.admin {color:#CC0000; text-decoration:none;}
+a.admin:visited {color:#CC0000;}
+
+div.mod_notes {margin-left:60px; font-family:Tahoma;font-size:8pt; background-color:#EFEFEF;}
+table.art_preview {width:800px;}
+table.art_preview th {text-align:left; font-size:9pt; font-weight:bold;}
+table.art_preview td {text-align:left; font-size:9pt; }
+table.art_preview tr.even_row {background-color:#ffffff; width:800px;}
+table.art_preview tr.odd_row {background-color:#f6faff; width:800px;}
+table.art_preview td.art_btn {width:10px; padding:4px 2px 0 0;}
+table.art_preview td.art_preview_body div{/*width:760px;*/ padding:8px;}
+div.art_preview_sum {font-style:italic; text-indent: 4px; margin:4px 0;}
+div.art_preview_kwd {font-style:normal; text-indent: 4px; margin:4px 0;}
+div.art_preview_txt {}
+div.art_preview_asg {font-weight:bolder; text-align:right;}
+div.art_preview_cmd {border:solid 1px #b7b9bc; margin:10px 0; padding: 4px;}
+div.art_preview_cmd textarea{width:100%;}
+
+div.comm_pp {width:800px; position:absolute; z-index:1001; background-color:#FEFEFE; border:solid 1px #CCCCCC;}
+span.abuse_pp {font-weight:bolder; font-size:8pt; color:#FF0000; }
+
+fieldset.usrctrl {width:400px; height:200px;}
+fieldset.usrctrl input{margin:2px 0 2px 0;font-size:8pt;height:20px;}
+
+img.sort-arrow {border:none; cursor:pointer;}
+img.descending {background-image:url(/_/static/down_sort.gif);}
+img.ascending {background-image:url(/_/static/up_sort.gif); }
+a.cmd {font-size:8pt; font-weight:200;}

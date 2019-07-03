@@ -24,3 +24,6 @@ It was migrated from a private Git server, hence the missing commit history.
 
 ## To any future users/readers
 This code was written before I had learned about code styles, or proper design in general... looking at it now, the implementation is embarrassingly naive. Sorry about that.
+
+# Literature
+Any literature included in this repo is there for any fellow Academics' convenience. I don't own any of it, and don't have distribution rights.
